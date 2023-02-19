@@ -3,6 +3,7 @@ const fs = require('fs')
 
 http
     .createServer((request, response) => {
+        console.log(request.url, request.url === '/upload')
         if (request.url === '/upload') {
             console.log('UPLOAD!!!')
             response.end()
