@@ -3,6 +3,7 @@ const fs = require('fs')
 
 http
     .createServer((request, response) => {
+        console.log(request)
         response.writeHead(200, {
             'Content-Type': 'text/html'
         });
